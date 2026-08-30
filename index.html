@@ -82,11 +82,11 @@ header.nav{
 @media(max-width:880px){.nav-links{display:none}}
 
 /* ─── hero ─── */
-.hero{padding:88px 0 96px;border-top:none;position:relative;overflow:hidden}
+.hero{padding:40px 0 96px;border-top:none;position:relative;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:center}
 .rule{width:56px;height:3px;background:var(--red);margin-bottom:26px}
 .hero-kicker{
-  font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted);
+  font-family:var(--mono);font-size:14px;letter-spacing:.06em;color:var(--muted);
   font-weight:500;margin-bottom:14px;
 }
 .hero h1{
@@ -95,7 +95,7 @@ header.nav{
 }
 .hero h1 em{font-style:normal;color:var(--red);}
 .hero p.lede{margin-top:24px;font-size:16px;color:var(--muted);font-weight:400;max-width:560px}
-.hero-cta{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
+.hero-cta{margin-top:70px;display:flex;gap:12px;flex-wrap:wrap}
 .hero-meta{margin-top:38px;padding-top:22px;border-top:1px solid var(--line);
   display:flex;gap:30px;flex-wrap:wrap}
 .hero-meta div{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted-2)}
@@ -142,10 +142,10 @@ section.tint .cards3 > div{background:var(--mist)}
 
 /* ─── evidence table ─── */
 .ev-head{background:var(--navy);color:#fff;padding:16px 22px;font-family:var(--mono);
-  font-size:12px;letter-spacing:.08em;margin-top:44px}
+  font-size:16px;letter-spacing:.08em;margin-top:44px}
 .ev{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
 .ev > div{background:#fff;padding:30px 26px}
-.ev-t{font-family:var(--mono);font-size:11px;letter-spacing:.14em;margin-bottom:20px;text-transform:uppercase}
+.ev-t{font-family:var(--mono);font-size:16px;letter-spacing:.14em;margin-bottom:20px;text-transform:uppercase}
 .ev .a .ev-t{color:var(--muted-2)}
 .ev .b .ev-t{color:var(--red)}
 .ev ul{list-style:none}
@@ -176,8 +176,10 @@ section.tint .cards3 > div{background:var(--mist)}
 .anchors{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:46px}
 .anc{background:#fff;padding:28px 24px}
 section.tint .anc{background:#fff}
-.anc-id{font-family:var(--mono);font-size:15px;letter-spacing:.08em;color:var(--navy);font-weight:500}
-.anc-nm{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--navy);margin-left:8px}
+/* .anc-id{font-family:var(--mono);font-size:15px;letter-spacing:.08em;color:var(--navy);font-weight:500}
+.anc-nm{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--navy);margin-left:8px} */
+.anc-id{font-family:var(--sans);font-size:24px;letter-spacing:.02em;color:var(--navy);font-weight:800;line-height:1.25}
+.anc-nm{font-family:var(--sans);font-size:28px;font-weight:800;color:var(--navy);margin-left:10px;letter-spacing:-.01em}
 .anc-dom{color:var(--red);font-size:14px;font-weight:700;margin:9px 0 14px;letter-spacing:0}
 .anc ul{list-style:none}
 .anc li{font-size:15px;color:var(--muted);font-weight:400;padding:4px 0 4px 12px;position:relative}
@@ -287,7 +289,7 @@ footer a:hover{color:#fff}
       <p class="lede">
         카이로스(KAIROS)는 그리스어로 ‘결정적 순간’을 뜻합니다.<br>
         전략 · 유통 · 재무 · HR · 국제금융에서 30년 이상 일해온 6인의 판단 방식을 AI로 구현했습니다.
-        자문 의뢰를 하시면 여섯 명의 진단과 토론을 <strong>하나의 보고서</strong>로 제공해 드립니다.
+        자문 의뢰를 하시면 6 전문가의 진단과 토론 결과를 <strong>하나의 보고서</strong>로 제공해 드립니다.
       </p>
       <div class="hero-cta">
         <a class="btn" href="#request">진단 의뢰하기</a>
@@ -395,7 +397,7 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="eyebrow">How It Works</div>
     <h2 class="sec">한 명의 전문가가 아니라,<br>여섯 명의 판단 관점을 동시에 호출합니다.</h2>
-    <p class="sec-sub">각 단계는 이전 단계가 완료되어야 시작됩니다. 건너뛸 수 없습니다.</p>
+    <!-- <p class="sec-sub">각 단계는 이전 단계가 완료되어야 시작됩니다. 건너뛸 수 없습니다.</p> -->
     <div class="steps">
       <div class="step">
         <div class="step-n">STEP 01</div>
@@ -462,11 +464,11 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="eyebrow">Evidence</div>
     <h2 class="sec">같은 자료, 다른 성격의 답.</h2>
-    <p class="sec-sub">동일한 케이스 자료를 범용 심층분석 에이전틱 AI와 KAIROS에 각각 투입한 결과입니다.</p>
+    <p class="sec-sub">동일한 케이스를 범용 AI와 KAIROS에 각각 투입하여 받은 상반된 결과</p>
     <div class="ev-head">CASE · 정밀부품 제조업 &nbsp;|&nbsp; 매출 480억 &nbsp;|&nbsp; EV 전환 압박 + PE 투자 유치 기로 &nbsp;|&nbsp; 2026.06 진단</div>
     <div class="ev">
       <div class="a">
-        <div class="ev-t">범용 AI 권고 · 교과서적 답변</div>
+        <div class="ev-t">범용 AI 권고</div>
         <ul>
           <li>PE 투자 유치 및 EV 전환 적극 권고</li>
           <li>재무 건전성 확보를 위한 회사채 발행 검토</li>
@@ -475,7 +477,7 @@ footer a:hover{color:#fff}
         </ul>
       </div>
       <div class="b">
-        <div class="ev-t">KAIROS 권고 · 실전적 판단</div>
+        <div class="ev-t">KAIROS 권고</div>
         <ul>
           <li>PE 투자 원천 거절 — 동반매도청구권 등 경영권 상실 위험</li>
           <li>역마진 SKU 11종 즉시 중단 → 현금흐름 선확보 최우선</li>
@@ -484,10 +486,10 @@ footer a:hover{color:#fff}
         </ul>
       </div>
     </div>
-    <div class="ev-note">
+    <!-- <div class="ev-note">
       범용 AI는 <b>결론</b>을 내고, KAIROS는 <b>판단</b>을 냅니다.
       이 케이스에서는 그 차이가 정반대의 권고로 나타났습니다.
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -496,11 +498,10 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="eyebrow">Product Tracks</div>
     <h2 class="sec">창업 초기부터 성숙 기업까지,<br>네 개의 트랙으로 전 주기를 커버합니다.</h2>
-    <p class="sec-sub">어느 트랙에 해당하는지는 의뢰 내용을 보고 저희가 판단합니다.</p>
+    <!-- <p class="sec-sub">어느 트랙에 해당하는지는 의뢰 내용을 보고 저희가 판단합니다.</p> -->
     <div class="tracks">
       <div class="trk">
         <div class="trk-en">SEED</div>
-        <div class="trk-ko">씨앗</div>
         <dl>
           <dt>대상</dt><dd>독립 창업초기 기업 · 스타트업</dd>
           <dt>판단의 성격</dt><dd>존립 · PMF · 런웨이 · 창업자 갈등 등 초기창업 고유 판단</dd>
@@ -508,7 +509,6 @@ footer a:hover{color:#fff}
       </div>
       <div class="trk">
         <div class="trk-en">VENTURE</div>
-        <div class="trk-ko">가지치기</div>
         <dl>
           <dt>대상</dt><dd>기존 기업의 신사업 · 분사 · TF</dd>
           <dt>판단의 성격</dt><dd>역량 적합성 · 자원 배분 · Exit 기준</dd>
@@ -516,7 +516,6 @@ footer a:hover{color:#fff}
       </div>
       <div class="trk">
         <div class="trk-en">CORE</div>
-        <div class="trk-ko">성목 · 다 자란 나무</div>
         <dl>
           <dt>대상</dt><dd>중견기업 (연매출 50~500억)</dd>
           <dt>판단의 성격</dt><dd>검증된 사업모델 내 최적화 · 위기관리 · 구조조정</dd>
@@ -524,18 +523,17 @@ footer a:hover{color:#fff}
       </div>
       <div class="trk">
         <div class="trk-en">LIGHT</div>
-        <div class="trk-ko">물주기 · 구독</div>
         <dl>
           <dt>대상</dt><dd>전 트랙 공통, 구독제</dd>
           <dt>판단의 성격</dt><dd>데일리 이슈 대응 · 상시 판단 지원</dd>
         </dl>
       </div>
     </div>
-    <div class="axis">
+    <!-- <div class="axis">
       <div><b>축 1 · 성숙도</b>Seed ↔ Core</div>
       <div><b>축 2 · 범위</b>회사 전체 ↔ 프로젝트 단위</div>
       <div><b>Light</b>두 축과 무관한 구독형 서비스</div>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -544,7 +542,7 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="eyebrow">Anchor Partners</div>
     <h2 class="sec">서로 다른 경영 전장을 보완하는 6인.</h2>
-    <p class="sec-sub">“어디를 거쳐왔는가”보다 “어떤 판단을 이식할 수 있는가”를 기준으로 정리했습니다.</p>
+    <!-- <p class="sec-sub">“어디를 거쳐왔는가”보다 “어떤 판단을 이식할 수 있는가”를 기준으로 정리했습니다.</p> -->
     <div class="anchors" id="anchorGrid"></div>
 
     <div class="sub-h">
@@ -560,8 +558,8 @@ footer a:hover{color:#fff}
 <section class="tint rv" id="process">
   <div class="wrap">
     <div class="eyebrow">Process &amp; Confidentiality</div>
-    <h2 class="sec">제출하신 자료는 원문 그대로<br>외부 전문가에게 전달되지 않습니다.</h2>
-    <p class="sec-sub">보안 절차는 접수 즉시 시작되며, 의뢰인이 하실 일은 없습니다.</p>
+    <h2 class="sec">제출하신 자료는 원문 그대로<br>앵커 파트너에게 전달되지 않습니다.</h2>
+    <p class="sec-sub">보안 절차는 접수 즉시 시작됩니다.</p>
     <div class="proc">
       <div>
         <div class="pn">01</div>
@@ -591,8 +589,8 @@ footer a:hover{color:#fff}
 <section class="rv" id="info">
   <div class="wrap">
     <div class="eyebrow">Cost &amp; Delivery</div>
-    <h2 class="sec">비용과 기간, 받으시는 결과물</h2>
-    <p class="sec-sub">의뢰 전에 궁금하실 세 가지를 먼저 밝힙니다.</p>
+    <h2 class="sec">비용, 기간, 진단 리포트</h2>
+    <!-- <p class="sec-sub">의뢰 전에 궁금하실 세 가지를 먼저 밝힙니다.</p> -->
     <div class="info3">
       <div>
         <div class="info-l">비용</div>
@@ -602,8 +600,8 @@ footer a:hover{color:#fff}
       </div>
       <div>
         <div class="info-l">소요 기간</div>
-        <div class="info-v">1영업일</div>
-        <p>추가 요청 자료가 모두 접수된 시점부터 1영업일 이내에 진단서를 전달합니다.</p>
+        <div class="info-v">1 영업일</div>
+        <p>추가 요청 자료가 모두 접수된 시점부터 1 영업일 이내에 진단서를 전달합니다.</p>
       </div>
       <div>
         <div class="info-l">결과물</div>
