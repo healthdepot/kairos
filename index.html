@@ -10,10 +10,7 @@
 <meta property="og:title" content="KAIROS — 오너와 함께하는 경영 판단 플랫폼">
 <meta property="og:description" content="30년의 현장 판단을 AI의 속도로. 주식회사 자브림 KAIROS 플랫폼.">
 <meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#0A1F3A;
@@ -26,13 +23,13 @@
   --line:#D8DDE8;
   --muted:#3F4757;
   --muted-2:#606A7E;
-  --serif:"Noto Serif KR",serif;
-  --sans:"Pretendard","Noto Sans KR","Malgun Gothic","맑은 고딕",system-ui,-apple-system,sans-serif;
-  --mono:"IBM Plex Mono","Noto Sans KR",monospace;
+  --serif:"Pretendard Variable","Pretendard","Malgun Gothic","맑은 고딕",system-ui,-apple-system,sans-serif;
+  --sans:"Pretendard Variable","Pretendard","Malgun Gothic","맑은 고딕",system-ui,-apple-system,sans-serif;
+  --mono:"Pretendard Variable","Pretendard","Malgun Gothic","맑은 고딕",system-ui,-apple-system,sans-serif;
   --maxw:1160px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;font-family:var(--sans)}
 body{
   font-family:var(--sans);font-weight:400;color:var(--ink);
   background:#fff;line-height:1.8;
@@ -191,7 +188,7 @@ section.tint .anc{background:#fff}
 .anc-ap{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);
   font-size:14px;color:var(--ink);font-weight:500;line-height:1.6}
 .anc-ap span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted-2);display:block;margin-bottom:3px}
-.veil{margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted-2)}
+.veil{margin-top:60px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted-2)}
 @media(max-width:940px){.anchors{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.anchors{grid-template-columns:1fr}}
 .partners{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:1px}
@@ -288,9 +285,9 @@ footer a:hover{color:#fff}
       <div class="hero-kicker">중소 · 중견기업 오너를 위한 AI 경영 진단 서비스</div>
       <h1>경영 판단을<br>혼자 감당하지 않는<br><em>구조</em>를 만듭니다.</h1>
       <p class="lede">
-        카이로스(KAIROS)는 그리스어로 ‘결정적 순간’을 뜻합니다.
+        카이로스(KAIROS)는 그리스어로 ‘결정적 순간’을 뜻합니다.<br>
         전략 · 유통 · 재무 · HR · 국제금융에서 30년 이상 일해온 6인의 판단 방식을 AI로 구현했습니다.
-        상황을 알려주시면 여섯 명의 진단과 토론을 <strong>하나의 보고서</strong>로 받으십니다.
+        자문 의뢰를 하시면 여섯 명의 진단과 토론을 <strong>하나의 보고서</strong>로 제공해 드립니다.
       </p>
       <div class="hero-cta">
         <a class="btn" href="#request">진단 의뢰하기</a>
@@ -327,7 +324,7 @@ footer a:hover{color:#fff}
           <circle class="ddot" style="animation-delay:1.9s" cx="352" cy="172" r="4.5" fill="#8A93A6"/>
           <circle class="ddot" style="animation-delay:2.0s" cx="352" cy="198" r="4.5" fill="#8A93A6"/>
         </g>
-        <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#8A93A6" letter-spacing=".08em">
+        <g font-family="Pretendard, sans-serif" font-size="10" fill="#8A93A6" letter-spacing=".08em">
           <text class="ddot" style="animation-delay:2.0s" x="366" y="49" fill="#C0322E">거절</text>
           <text class="ddot" style="animation-delay:2.1s" x="366" y="117" fill="#C99B49">조건부</text>
           <text class="ddot" style="animation-delay:2.2s" x="366" y="189">유치</text>
@@ -552,9 +549,10 @@ footer a:hover{color:#fff}
 
     <div class="sub-h">
       <h3>기술 파트너 · 게이트 파트너</h3>
-      <p>판단의 구조화와 사전 검증을 담당합니다.</p>
-    </div>
+      <p>판단의 구조화와 사전 검증 담당</p>
+    </div>    
     <div class="partners" id="partnerGrid"></div>
+    <p class="veil">※ 추가 정보는 진단 의뢰 시 제공됩니다.</p>
   </div>
 </section>
 
@@ -894,55 +892,43 @@ const ANCHORS = [
 const PARTNERS = [
   {
     id:"W.A. Yoon", name:"윤웅아", disclosure:"initial",
-    domain:"AI 아키텍처 & 기술 파트너",
-    edu:"Cornell University 전산학 학사 · Cornell University 대학원 CS 석사",
+    domain:"기술 파트너 & AI 아키텍처",
+    edu:"Cornell University 전산학 학사 · 석사",
     initial:[
-      "삼성전자 본사 AI · 블록체인 Corporate VP — R&D 총괄",
-      "IBM 본사 Chief Architect — 엔터프라이즈 시스템 설계",
-      "앵커의 암묵지를 AI로 구조화하는 알고리즘 설계 자문",
-      "차세대 AI 경영 에이전트 기술 로드맵 수립 지원"
+      "삼성전자 AI · 블록체인 VP — R&D 총괄",
+      "IBM 본사 Chief Architect",      
     ],
     full:[
       "삼성전자 AI · 블록체인 Corporate VP — R&D 총괄 및 미래 기술 전략 수립",
-      "IBM Chief Architect — 엔터프라이즈 시스템 설계 최고 권위자",
-      "앵커의 암묵지를 AI로 구조화하는 알고리즘 설계 자문",
-      "차세대 AI 경영 에이전트 기술 로드맵 수립 지원"
+      "IBM Chief Architect — 엔터프라이즈 시스템 설계 권위자",      
     ],
     apply:"플랫폼 AI 아키텍처 자문, 진단 결과의 기술적 신뢰성 검증"
   },
   {
     id:"N. Park", name:"박노준", disclosure:"initial",
-    domain:"게이트 파트너 · 테크니컬 PM",
+    domain:"게이트 파트너 · SW",
     edu:"KAIST 전산학 석사",
     initial:[
-      "㈜가지(Gaji Inc.) 공동창업자 · Head of Development",
-      "삼성전자 Principal SW Engineer & TPM 20년",
-      "IoT 스마트홈 서비스 개발 · 글로벌 사업자 제휴",
-      "검증 엔진 구축 및 운영"
+      "주식회사 가지 Co-Founder & CTO",
+      "삼성전자 수석연구원",      
     ],
-    full:[
-      "㈜가지(Gaji Inc.) 공동창업자 · Head of Development",
-      "삼성전자 Principal SW Engineer & TPM (20년)",
-      "IoT 스마트홈 서비스 개발 · 글로벌 사업자 제휴",
-      "검증 엔진(제로투원) 구축 · 운영"
+    full:[      
+      "주식회사 가지 Co-Founder & CTO",
+      "삼성전자 수석연구원",      
     ],
     apply:"검증 엔진 구축·운영, 진단 파이프라인 기술 구현"
   },
   {
     id:"H. Yoon", name:"윤승환", disclosure:"initial",
-    domain:"게이트 파트너 · UX 디렉터",
+    domain:"게이트 파트너 · 브랜딩 & UX",
     edu:"University of the Arts London",
     initial:[
-      "㈜가지(Gaji Inc.) 공동창업자 · Head of Design",
-      "글로벌 금융권 및 에너지 기업 디자인 20년+",
-      "‘악마의 변호인’ 검증 방법론 · 질문 체계 설계",
-      "STEP 1.5 검증 게이트 설계 및 운영"
+      "주식회사 가지 Co-Founder & CEO",            
+      "Dserv Ltd 파트너",
     ],
-    full:[
-      "㈜가지(Gaji Inc.) 공동창업자 · Head of Design",
-      "Dserv Ltd · bp · bp pulse",
-      "HSBC · Barclays · Deutsche Bank(DWS) 등 20년+",
-      "‘악마의 변호인’ 검증 방법론 · 질문 체계 설계"
+    full:[      
+      "주식회사 가지 Co-Founder & CEO",
+      "Dserv Ltd 파트너",
     ],
     apply:"판단 전 검증 게이트 설계, 논리적 허점 및 미검증 가정 도출"
   }
@@ -953,16 +939,13 @@ function cardHTML(a){
   const items = (full ? a.full : a.initial).map(function(x){ return '<li>'+x+'</li>'; }).join('');
   const head = full
     ? '<span class="anc-id">'+a.id+'</span><span class="anc-nm">'+a.name+'</span>'
-    : '<span class="anc-id">'+a.id+'</span>';
-  const veil = full ? '' :
-    '<div class="veil">※ 성명 등 신원 정보는 비밀유지계약 체결 후 공개됩니다</div>';
+    : '<span class="anc-id">'+a.id+'</span>';  
   return '<article class="anc">'
     + '<div>'+head+'</div>'
     + '<div class="anc-dom">'+a.domain+'</div>'
     + '<ul>'+items+'</ul>'
     + '<div class="anc-edu"><span>EDUCATION</span><p>'+a.edu+'</p></div>'
-    + '<div class="anc-ap"><span>KAIROS 적용 영역</span>'+a.apply+'</div>'
-    + veil
+    // + '<div class="anc-ap"><span>KAIROS 적용 영역</span>'+a.apply+'</div>'
     + '</article>';
 }
 document.getElementById('anchorGrid').innerHTML  = ANCHORS.map(cardHTML).join('');
