@@ -1,2 +1,6 @@
 .DS_Store
 node_modules/
+
+# 로컬 admin 전용 — GitHub Pages에 올리지 마세요
+admin.html
+admin.config.js
